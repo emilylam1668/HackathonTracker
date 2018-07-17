@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73A631D820FEB2B6001AB722 /* DetailPoopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A631D720FEB2B6001AB722 /* DetailPoopViewController.swift */; };
+		73A631DA20FEB365001AB722 /* PData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A631D920FEB365001AB722 /* PData.swift */; };
 		D790A35E20FE925C00849775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790A35D20FE925C00849775 /* AppDelegate.swift */; };
 		D790A36020FE925C00849775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790A35F20FE925C00849775 /* ViewController.swift */; };
 		D790A36320FE925C00849775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D790A36120FE925C00849775 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73A631D720FEB2B6001AB722 /* DetailPoopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPoopViewController.swift; sourceTree = "<group>"; };
+		73A631D920FEB365001AB722 /* PData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PData.swift; sourceTree = "<group>"; };
 		D790A35A20FE925C00849775 /* HackathonTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D790A35D20FE925C00849775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D790A35F20FE925C00849775 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +62,13 @@
 			children = (
 				D790A35D20FE925C00849775 /* AppDelegate.swift */,
 				D790A35F20FE925C00849775 /* ViewController.swift */,
+				73A631D920FEB365001AB722 /* PData.swift */,
 				D790A36120FE925C00849775 /* Main.storyboard */,
 				D790A36720FE926000849775 /* Assets.xcassets */,
 				D790A36920FE926000849775 /* LaunchScreen.storyboard */,
 				D790A36C20FE926000849775 /* Info.plist */,
 				D790A36420FE925C00849775 /* HackathonTracker.xcdatamodeld */,
+				73A631D720FEB2B6001AB722 /* DetailPoopViewController.swift */,
 			);
 			path = HackathonTracker;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A631DA20FEB365001AB722 /* PData.swift in Sources */,
 				D790A36620FE925C00849775 /* HackathonTracker.xcdatamodeld in Sources */,
+				73A631D820FEB2B6001AB722 /* DetailPoopViewController.swift in Sources */,
 				D790A36020FE925C00849775 /* ViewController.swift in Sources */,
 				D790A35E20FE925C00849775 /* AppDelegate.swift in Sources */,
 			);
