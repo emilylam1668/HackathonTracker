@@ -23,6 +23,22 @@ class DetailPoopViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard let identifier = segue.identifier else { return }
+//        switch identifier {
+//        case "save":
+//
+//
+//        default:
+//
+//        }
+//    }
+    
+    @IBAction func saveButton(_ sender: Any) {
+        // add save code
+            self.navigationController?.popViewController(animated: true)
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -33,5 +49,21 @@ class DetailPoopViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var dateView: UIView!
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBOutlet weak var detailsView: UIView!
+    @IBOutlet weak var consistencyLabel: UILabel!
+    @IBOutlet weak var consistencySlider: UISlider!
+    @IBAction func sliderChanged(_ sender: UISlider) {
+    }
+    
+    @IBOutlet weak var amountLabel: UILabel!
+    @IBOutlet weak var amountSegmentedControl: UIStackView!
+    @IBAction func amountChanged(_ sender: UISegmentedControl) {
+    }
 }
