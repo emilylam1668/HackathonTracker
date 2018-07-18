@@ -11,8 +11,11 @@ import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+     @IBOutlet weak var tableView: UITableView!
     var poopItems: [PData] = []
-
+    
+    var count = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        tableView.delegate = self
@@ -20,7 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return count
     }
     
 //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -43,7 +46,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-    @IBOutlet weak var tableView: UITableView!
+    
+    
+    @IBOutlet weak var addPoopData: UIBarButtonItem!
+    
+    @IBAction func addPoopData(_ sender: Any) {
+        print("button pressed")
+        count += 1
+        self.tableView.reloadData()
+        
+    }
+   
 
 }
 
