@@ -11,7 +11,7 @@ import CoreData
 
 class ViewController: UIViewController {
     
-    var poopItems: [PData]
+    var poopItems: [PData] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
