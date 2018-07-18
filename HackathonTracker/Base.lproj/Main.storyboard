@@ -24,24 +24,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="f3N-da-rkZ">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" rowHeight="135" id="f3N-da-rkZ" customClass="displayDataCell" customModule="HackathonTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f3N-da-rkZ" id="D4x-En-EFm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="99q-of-I8D">
-                                                    <rect key="frame" x="25" y="21" width="325" height="58"/>
+                                                    <rect key="frame" x="25" y="21" width="325" height="93"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Created" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrV-im-oBt">
-                                                            <rect key="frame" x="0.0" y="0.0" width="325" height="37.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="325" height="72.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOa-zf-o5S">
-                                                            <rect key="frame" x="0.0" y="37.5" width="325" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="72.5" width="325" height="20.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thickness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEl-af-eOQ">
                                                                     <rect key="frame" x="0.0" y="0.0" width="162.5" height="20.5"/>
@@ -70,6 +70,11 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="99q-of-I8D" secondAttribute="bottom" constant="10" id="w8F-N3-0an"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="amountLabel" destination="fSp-Fw-PkO" id="WoI-Ek-2NO"/>
+                                            <outlet property="dateCreatedLabel" destination="NrV-im-oBt" id="Y1c-YT-a5O"/>
+                                            <outlet property="thicknessLabel" destination="pEl-af-eOQ" id="0nr-Yn-XW7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

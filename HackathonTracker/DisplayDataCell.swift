@@ -11,6 +11,9 @@ import UIKit
 
 class displayDataCell: UITableViewCell {
     
+    @IBOutlet weak var dateCreatedLabel: UILabel!
     
+    @IBOutlet weak var thicknessLabel: UILabel!
     
+    @IBOutlet weak var amountLabel: UILabel!
 }
