@@ -33,7 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        tableView.dataSource = self
     }
     override func viewWillAppear(_ animated: Bool) {
-        poopItems = CoreDataHelper.retrieveData()
+        poopItems = CoreDataHelper.retrieve()
         tableView.reloadData()
     }
     
