@@ -189,11 +189,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="eef-qa-YVI">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="5BG-up-DdD">
-                            <connections>
-                                <action selector="saveButton:" destination="6wR-Im-M8k" id="Vy1-QN-tZ0"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="5BG-up-DdD"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
