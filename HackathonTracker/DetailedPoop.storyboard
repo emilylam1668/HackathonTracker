@@ -200,14 +200,11 @@
                     <connections>
                         <outlet property="amountLabel" destination="riH-MG-7Kp" id="koh-nO-kXw"/>
                         <outlet property="amountSegmentedControl" destination="kqp-C6-Yb0" id="Hlf-cr-FA0"/>
-                        <outlet property="consistencyLader" destination="2wZ-or-ftU" id="IBh-q2-vXl"/>
-                        <outlet property="consistencylabel" destination="Fa7-LX-qeD" id="uMl-Pm-ZmB"/>
                         <outlet property="dateLabel" destination="pNR-8Y-up2" id="uex-2T-Lua"/>
                         <outlet property="dateView" destination="L7U-U0-bAg" id="DDf-Dq-Zw3"/>
                         <outlet property="dayLabel" destination="GB1-y9-yXg" id="0Z1-9g-qRE"/>
                         <outlet property="detailsView" destination="XmT-iH-7IX" id="mIZ-Zu-Yhe"/>
                         <outlet property="headerView" destination="e54-FR-3b1" id="Aah-Zn-fQM"/>
-                        <outlet property="slider" destination="2wZ-or-ftU" id="YiJ-Ef-uj5"/>
                         <outlet property="titleLabel" destination="Npy-ip-NTH" id="dhZ-4h-6hF"/>
                     </connections>
                 </viewController>
