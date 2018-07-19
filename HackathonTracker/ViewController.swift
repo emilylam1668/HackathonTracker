@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     var poopItems: [PData] = []
     
-    var count = 0
+    //var count = 0
     
     let outsideMonthColor = UIColor(red:0.66, green:0.66, blue:0.66, alpha:1.0) //gray
     let monthColor = UIColor(red:0.78, green:0.59, blue:1.00, alpha:1.0) //purple
@@ -31,11 +31,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
 //        tableView.delegate = self
 //        tableView.dataSource = self
-       
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        poopItems = CoreDataHelper.retrieveData()
+        tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return count
+        return poopItems.count
     }
     
 //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -63,9 +66,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var addPoopData: UIBarButtonItem!
     
     @IBAction func addPoopData(_ sender: Any) {
-        print("button pressed")
-        count += 1
-        self.tableView.reloadData()
+       
+//        let storyBoard = UIStoryboard(name: "DetailedPoop", bundle: nil)
+//        let detailViewController = storyBoard.instantiateInitialViewController() as! DetailPoopViewController
+//        self.navigationController!.pushViewController(detailViewController, animated: true)
+        
+       // self.tableView.reloadData()
         
     }
    
