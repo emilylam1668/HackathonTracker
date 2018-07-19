@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
@@ -7,8 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dna-PD-8Tu">
-                                <rect key="frame" x="0.0" y="261" width="375" height="406"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.92549019610000005" green="0.74901960779999999" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -90,7 +88,7 @@
                         <constraints>
                             <constraint firstItem="Dna-PD-8Tu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MFw-WI-vC8"/>
                             <constraint firstItem="Dna-PD-8Tu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WDw-zf-Qmo"/>
-                            <constraint firstItem="Dna-PD-8Tu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="197" id="nd4-8k-flu"/>
+                            <constraint firstItem="Dna-PD-8Tu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nd4-8k-flu"/>
                             <constraint firstItem="Dna-PD-8Tu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qyW-iN-y3L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -105,9 +103,6 @@
                     <connections>
                         <outlet property="addPoopData" destination="K4n-vX-ebO" id="Y3S-gP-sVK"/>
                         <outlet property="tableView" destination="Dna-PD-8Tu" id="y16-aV-jc3"/>
-                    </connections>
-                    <connections>
-                        <segue destination="jBq-8V-WXx" kind="show" id="Mbf-5g-7aD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
