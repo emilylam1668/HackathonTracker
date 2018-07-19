@@ -13,6 +13,7 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var year: UILabel!
     @IBOutlet weak var month: UILabel!
+    @IBOutlet weak var containerView: UIView!
     
     let outsideMonthColor = UIColor(red:0.66, green:0.66, blue:0.66, alpha:1.0) //gray
     let monthColor = UIColor(red:0.78, green:0.59, blue:1.00, alpha:1.0) //purple
@@ -24,19 +25,32 @@ class CalendarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      
         setupCalendarView()
     }
     @IBAction func segmentChoice(_ sender: UISegmentedControl) {
         
         switch sender.selectedSegmentIndex{
-        case 0: print("Poop")
+        case 0: callPoopViewController()
         default: break
             
         }
     }
     
     func callPoopViewController(){
+        let storyboard = UIStoryboard(name: "DetailedPoop", bundle: nil)
+        let detail = storyboard.instantiateInitialViewController() as! DetailPoopViewController
+        self.present(detail, animated: true, completion: nil)
+    }
+    
+    func loadTableview(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainViewController = storyboard.instantiateInitialViewController() as! ViewController
+        self.addChildViewController(mainViewController)
+        mainViewController.view.frame = CGRect(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
+        self.containerView.addSubview(mainViewController.view)
+        mainViewController.didMove(toParentViewController: self)
+        mainViewController.tableView.reloadData()
         
     }
     
@@ -140,7 +154,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
         handleCellSelected(view: cell, cellState: cellState)
         handleCelltextColor(view: cell, cellState: cellState)
         print("selected")
-        
+        loadTableview()
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
