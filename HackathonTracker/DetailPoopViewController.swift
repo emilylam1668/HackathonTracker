@@ -10,7 +10,7 @@ import UIKit
 
 class DetailPoopViewController: UIViewController {
     
-    var poopItem = PData(thickness: 1.0, dateCreated: Date(), amount: 1)
+    var poopItem = Pdata(thickness: 1.0, dateCreated: Date(), amount: 1)
 
     override func viewDidLoad() {
         super.viewDidLoad()

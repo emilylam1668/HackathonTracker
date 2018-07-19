@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct PData {
-    
+struct Pdata {
+
     //ranges from 0.0 to 1.0
     var thickness: Double
-    
+
     //is when the post was made
     var dateCreated: Date
-    
+
     //0 is little, 1 is normal, 2 is monsterous
     var amount: Int
 }
