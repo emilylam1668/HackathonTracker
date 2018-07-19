@@ -12,6 +12,9 @@
 		9DD7F13F2100125B00576629 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD7F13E2100125B00576629 /* Calendar.storyboard */; };
 		D71261C620FEB16200EEF0CC /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71261C520FEB16200EEF0CC /* CoreDataHelper.swift */; };
 		D71261CA20FEED7600EEF0CC /* DisplayDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71261C920FEED7600EEF0CC /* DisplayDataCell.swift */; };
+		73A631D820FEB2B6001AB722 /* DetailPoopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A631D720FEB2B6001AB722 /* DetailPoopViewController.swift */; };
+		73A631DA20FEB365001AB722 /* PData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A631D920FEB365001AB722 /* PData.swift */; };
+		73A631DF20FEB995001AB722 /* DetailedPoop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A631DE20FEB995001AB722 /* DetailedPoop.storyboard */; };
 		D790A35E20FE925C00849775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790A35D20FE925C00849775 /* AppDelegate.swift */; };
 		D790A36020FE925C00849775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790A35F20FE925C00849775 /* ViewController.swift */; };
 		D790A36320FE925C00849775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D790A36120FE925C00849775 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 		9DD7F13E2100125B00576629 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		D71261C520FEB16200EEF0CC /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		D71261C920FEED7600EEF0CC /* DisplayDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayDataCell.swift; sourceTree = "<group>"; };
+		73A631D720FEB2B6001AB722 /* DetailPoopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPoopViewController.swift; sourceTree = "<group>"; };
+		73A631D920FEB365001AB722 /* PData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PData.swift; sourceTree = "<group>"; };
+		73A631DE20FEB995001AB722 /* DetailedPoop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailedPoop.storyboard; sourceTree = "<group>"; };
 		D790A35A20FE925C00849775 /* HackathonTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D790A35D20FE925C00849775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D790A35F20FE925C00849775 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,8 +106,11 @@
 				D71261C920FEED7600EEF0CC /* DisplayDataCell.swift */,
 				D790A35D20FE925C00849775 /* AppDelegate.swift */,
 				D790A35F20FE925C00849775 /* ViewController.swift */,
+				73A631D920FEB365001AB722 /* PData.swift */,
 				D790A36120FE925C00849775 /* Main.storyboard */,
 				D71261C520FEB16200EEF0CC /* CoreDataHelper.swift */,
+				73A631D720FEB2B6001AB722 /* DetailPoopViewController.swift */,
+				73A631DE20FEB995001AB722 /* DetailedPoop.storyboard */,
 				D790A36720FE926000849775 /* Assets.xcassets */,
 				D790A36920FE926000849775 /* LaunchScreen.storyboard */,
 				D790A36C20FE926000849775 /* Info.plist */,
@@ -171,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A631DF20FEB995001AB722 /* DetailedPoop.storyboard in Resources */,
 				9DD7F13F2100125B00576629 /* Calendar.storyboard in Resources */,
 				D790A36B20FE926000849775 /* LaunchScreen.storyboard in Resources */,
 				D790A36820FE926000849775 /* Assets.xcassets in Resources */,
@@ -224,7 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A631DA20FEB365001AB722 /* PData.swift in Sources */,
 				D790A36620FE925C00849775 /* HackathonTracker.xcdatamodeld in Sources */,
+				73A631D820FEB2B6001AB722 /* DetailPoopViewController.swift in Sources */,
 				D790A36020FE925C00849775 /* ViewController.swift in Sources */,
 				D71261C620FEB16200EEF0CC /* CoreDataHelper.swift in Sources */,
 				D71261CA20FEED7600EEF0CC /* DisplayDataCell.swift in Sources */,
