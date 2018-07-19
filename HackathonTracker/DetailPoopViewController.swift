@@ -33,12 +33,33 @@ class DetailPoopViewController: UIViewController {
 //
 //        }
 //    }
-    
-    @IBAction func saveButton(_ sender: Any) {
-        // add save code
-            self.navigationController?.popViewController(animated: true)
+    @IBOutlet weak var consistencyLabel: UILabel!
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier else { return }
+        
+        switch identifier {
+            
+        case "save":
+            let pData = CoreDataHelper.newPData()
+            let selectedIndex = amountSegmentedControl.selectedSegmentIndex
+            if selectedIndex == 0 {
+                pData.amount = "Few"
+            } else if selectedIndex == 1 {
+                pData.amount = "Moderate"
+            } else if selectedIndex == 2 {
+                pData.amount = "Plenty"
+            }
+            pData.thickness = consistencySlider.value
+            pData.dateCreated = Date()
+            CoreDataHelper.save()
+        case "cancel":
+            print("cancel bar button item tapped")
+            
+        default:
+            print("unexpected segue identifier")
+        }
     }
-    
 
     /*
     // MARK: - Navigation
@@ -57,13 +78,13 @@ class DetailPoopViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var detailsView: UIView!
-    @IBOutlet weak var consistencyLabel: UILabel!
+    
+    @IBOutlet weak var amountSegmentedControl: UISegmentedControl!
     @IBOutlet weak var consistencySlider: UISlider!
     @IBAction func sliderChanged(_ sender: UISlider) {
     }
     
     @IBOutlet weak var amountLabel: UILabel!
-    @IBOutlet weak var amountSegmentedControl: UIStackView!
     @IBAction func amountChanged(_ sender: UISegmentedControl) {
     }
 }
