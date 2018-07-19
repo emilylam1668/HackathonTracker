@@ -27,6 +27,19 @@ class CalendarViewController: UIViewController {
         
         setupCalendarView()
     }
+    @IBAction func segmentChoice(_ sender: UISegmentedControl) {
+        
+        switch sender.selectedSegmentIndex{
+        case 0: print("Poop")
+        default: break
+            
+        }
+    }
+    
+    func callPoopViewController(){
+        
+    }
+    
     
     func setupCalendarView() {
         // setup calendar spacing
@@ -126,6 +139,8 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         handleCellSelected(view: cell, cellState: cellState)
         handleCelltextColor(view: cell, cellState: cellState)
+        print("selected")
+        
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
@@ -136,4 +151,8 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
         setupViewsOfCalendar(from: visibleDates)
     }
+}
+
+extension CalendarViewController {
+    
 }
