@@ -39,8 +39,8 @@ class CalendarViewController: UIViewController {
     
     func callPoopViewController(){
         let storyboard = UIStoryboard(name: "DetailedPoop", bundle: nil)
-        let detail = storyboard.instantiateInitialViewController() as! DetailPoopViewController
-        self.present(detail, animated: true, completion: nil)
+        let detail = storyboard.instantiateInitialViewController() //as! DetailPoopViewController
+        self.present(detail!, animated: true, completion: nil)
     }
     
     func loadTableview(){
