@@ -106,10 +106,10 @@ class CalendarViewController: UIViewController {
         let date = visibleDates.monthDates.first!.date
         
         formatter.dateFormat = "yyyy"
-        year.text = formatter.string(from: date)
+        year.text = "  " + formatter.string(from: date)
         
         formatter.dateFormat = "MMMM"
-        month.text = formatter.string(from: date)
+        month.text = "  " + formatter.string(from: date)
     }
     
     override func didReceiveMemoryWarning() {
