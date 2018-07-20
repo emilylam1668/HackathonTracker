@@ -36,7 +36,11 @@ class CalendarViewController: UIViewController {
             
         }
     }
-    
+
+    @IBAction func addNewPoopData(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "addPoopDetails", sender: self)
+    }
+
     func callPoopViewController(){
 //        let storyboard = UIStoryboard(name: "DetailedPoop", bundle: nil)
 //        let detail = storyboard.instantiateInitialViewController() as! DetailPoopViewController

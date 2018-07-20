@@ -214,7 +214,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="LDL-P4-Ixt"/>
+                    <navigationItem key="navigationItem" id="LDL-P4-Ixt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="95V-Gg-QZa">
+                            <connections>
+                                <action selector="addNewPoopData:" destination="BYZ-38-t0r" id="Vmp-4X-9iW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="calendarView" destination="TJb-Wu-OqG" id="bQR-Qm-1K7"/>
                         <outlet property="containerView" destination="zu5-dE-g4g" id="KpJ-xb-Y8A"/>
