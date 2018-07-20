@@ -39,7 +39,6 @@ struct CoreDataHelper {
     
     static func delete(pData: PData) {
         context.delete(pData)
-        
         save()
     }
     
