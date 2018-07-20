@@ -10,7 +10,6 @@ import UIKit
 
 class DetailPoopViewController: UIViewController {
     
-    var poopItem = Pdata(thickness: 1.0, dateCreated: Date(), amount: 1)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +32,9 @@ class DetailPoopViewController: UIViewController {
 //
 //        }
 //    }
+    
+    var date : Date?
+    
     @IBOutlet weak var consistencyLabel: UILabel!
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -40,9 +42,9 @@ class DetailPoopViewController: UIViewController {
         
         switch identifier {
             
-        case "save":
+        case "Save":
             let pData = CoreDataHelper.newPData()
-            let selectedIndex = amountSegmentedControl.selectedSegmentIndex
+            let selectedIndex = amountSegmentControl.selectedSegmentIndex
             if selectedIndex == 0 {
                 pData.amount = "Few"
             } else if selectedIndex == 1 {
@@ -51,9 +53,9 @@ class DetailPoopViewController: UIViewController {
                 pData.amount = "Plenty"
             }
             pData.thickness = consistencySlider.value
-            pData.dateCreated = Date()
+            pData.dateCreated = self.date
             CoreDataHelper.save()
-        case "cancel":
+        case "Cancel":
             print("cancel bar button item tapped")
             
         default:
@@ -79,7 +81,8 @@ class DetailPoopViewController: UIViewController {
     
     @IBOutlet weak var detailsView: UIView!
     
-    @IBOutlet weak var amountSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var amountSegmentControl: UISegmentedControl!
+    
     @IBOutlet weak var consistencySlider: UISlider!
     @IBAction func sliderChanged(_ sender: UISlider) {
     }

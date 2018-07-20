@@ -13,9 +13,11 @@ import JTAppleCalendar
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
   
     @IBOutlet weak var tableView: UITableView!
     var poopItems: [PData] = []
+    var date: String?
     
     //var count = 0
     
@@ -37,8 +39,56 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.reloadData()
     }
     
+    override func reloadInputViews() {
+        poopItems = CoreDataHelper.retrieve()
+        let filtered = poopItems.filter { (data) -> Bool in
+            return data.dateCreated?.toString() == date
+        }
+        poopItems = filtered
+        self.tableView.reloadData()
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        poopItems = CoreDataHelper.retrieve()
+        let filtered = poopItems.filter { (data) -> Bool in
+            return data.dateCreated?.toString() == date
+        }
+        poopItems = filtered
+        
         return poopItems.count
+    }
+//
+//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            poopItems.remove(at: indexPath.row)
+//        }
+//    }
+    
+
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            self.poopItems.remove(at: indexPath.row)
+//            self.tableView.deleteRows(at: [indexPath], with: .automatic)
+//        }
+//    }
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { (_, indexPath) in
+            
+            print(self.poopItems.count)
+            self.poopItems.remove(at: indexPath.row + 1)
+            print(indexPath)
+            print(self.poopItems.count)
+            self.tableView.deleteRows(at: [indexPath ], with: .automatic)
+            
+            let poop = self.poopItems[indexPath.row]
+            CoreDataHelper.delete(pData: poop)
+        }
+        
+        return [deleteAction]
+        
     }
     
 //    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,17 +99,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "displayDataCell") as! displayDataCell
         
-        switch indexPath.row {
-        case 0:
-            cell.amountLabel.text = "testing"
-            
-        default:
-            cell.amountLabel.text = ""
-            cell.dateCreatedLabel.text = ""
-            cell.thicknessLabel.text = ""
-        }
+        
+        cell.amountLabel.text = poopItems[indexPath.row].amount
+        // cell.dateCreatedLabel.text = String(poopItems[indexPath.row].dateCreated!)
+        
+        
+        cell.thicknessLabel.text = String(poopItems[indexPath.row].thickness)
         return cell
     }
+
     
     
     
