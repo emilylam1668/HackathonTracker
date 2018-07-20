@@ -48,7 +48,7 @@ struct CoreDataHelper {
             let fetchRequest = NSFetchRequest<PData>(entityName: "PData")
             let results = try context.fetch(fetchRequest)
             
-            return results
+            return results.reversed()
         } catch let error {
             print("Could not fetch \(error.localizedDescription)")
             
