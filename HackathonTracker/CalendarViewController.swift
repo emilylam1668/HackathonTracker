@@ -19,7 +19,7 @@ class CalendarViewController: UIViewController {
     let monthColor = UIColor(red:0.78, green:0.59, blue:1.00, alpha:1.0) //purple
     let selectedMonthColor = UIColor.white
     let currentDateSelectedViewColor = UIColor(red:1.00, green:0.73, blue:0.87, alpha:1.0) //pink
-    
+    var date : Date?
     
     let formatter = DateFormatter()
     
@@ -43,15 +43,24 @@ class CalendarViewController: UIViewController {
 //        self.present(detail, animated: true, completion: nil)
         self.performSegue(withIdentifier: "addPoopDetails", sender: self)
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addPoopDetails"{
+            let pDatailVC = segue.destination as! DetailPoopViewController
+            pDatailVC.date = self.date
+        }
+    }
     
-    func loadTableview(){
+    func loadTableview(date: String){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainViewController = storyboard.instantiateInitialViewController() as! ViewController
         self.addChildViewController(mainViewController)
         mainViewController.view.frame = CGRect(x: 0, y: 0, width: self.containerView.frame.size.width, height: self.containerView.frame.size.height)
+        mainViewController.date = date
+        mainViewController.tableView.reloadInputViews()
         self.containerView.addSubview(mainViewController.view)
         mainViewController.didMove(toParentViewController: self)
-        mainViewController.tableView.reloadData()
+        
+       
         
     }
     
@@ -114,7 +123,7 @@ class CalendarViewController: UIViewController {
     }
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
-        loadTableview()
+        //loadTableview()
     }
 }
 
@@ -140,6 +149,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
         let cell = calendar.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCell
         sharedFunctionToConfigureCell(cell: cell, cellState: cellState, date: date)
+        
         return cell
     }
     
@@ -158,8 +168,9 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         handleCellSelected(view: cell, cellState: cellState)
         handleCelltextColor(view: cell, cellState: cellState)
+        self.date = date
         print("selected")
-        loadTableview()
+        loadTableview(date: date.toString())
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {

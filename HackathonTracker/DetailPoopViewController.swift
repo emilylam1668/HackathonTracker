@@ -32,6 +32,9 @@ class DetailPoopViewController: UIViewController {
 //
 //        }
 //    }
+    
+    var date : Date?
+    
     @IBOutlet weak var consistencyLabel: UILabel!
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -50,7 +53,7 @@ class DetailPoopViewController: UIViewController {
                 pData.amount = "Plenty"
             }
             pData.thickness = consistencySlider.value
-            pData.dateCreated = Date()
+            pData.dateCreated = self.date
             CoreDataHelper.save()
         case "Cancel":
             print("cancel bar button item tapped")

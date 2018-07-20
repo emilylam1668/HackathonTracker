@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
   
     @IBOutlet weak var tableView: UITableView!
     var poopItems: [PData] = []
+    var date: String?
     
     //var count = 0
     
@@ -37,7 +38,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.reloadData()
     }
     
+    override func reloadInputViews() {
+        poopItems = CoreDataHelper.retrieve()
+        let filtered = poopItems.filter { (data) -> Bool in
+            return data.dateCreated?.toString() == date
+        }
+        poopItems = filtered
+        self.tableView.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        poopItems = CoreDataHelper.retrieve()
+        let filtered = poopItems.filter { (data) -> Bool in
+            return data.dateCreated?.toString() == date
+        }
+        poopItems = filtered
+        
         return poopItems.count
     }
     
@@ -52,6 +69,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         cell.amountLabel.text = poopItems[indexPath.row].amount
         // cell.dateCreatedLabel.text = String(poopItems[indexPath.row].dateCreated!)
+        
+        
         cell.thicknessLabel.text = String(poopItems[indexPath.row].thickness)
         return cell
     }
