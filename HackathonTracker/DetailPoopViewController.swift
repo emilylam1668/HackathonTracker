@@ -13,7 +13,6 @@ class DetailPoopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -69,6 +68,7 @@ class DetailPoopViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     

@@ -234,7 +234,7 @@
                     <view key="view" contentMode="scaleToFill" id="HIp-28-57v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="247.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.91764705882352937" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="Kfh-xN-ynf"/>
                     </view>
                 </viewController>
@@ -371,7 +371,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.96946383250000001" green="0.9161670529" blue="0.87592677689999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.91764705882352937" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="knp-rf-TRK" firstAttribute="leading" secondItem="Q7e-hW-Wqd" secondAttribute="leading" constant="15" id="4uL-Lh-uuL"/>
                                     <constraint firstItem="dvr-MI-yae" firstAttribute="top" secondItem="b1n-MU-GZ7" secondAttribute="bottom" constant="30" id="5fI-7Y-Jad"/>
