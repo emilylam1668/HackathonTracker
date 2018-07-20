@@ -55,6 +55,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.thicknessLabel.text = String(poopItems[indexPath.row].thickness)
         return cell
     }
+     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            poopItems.remove(at: indexPath.row)
+        }
+    }
     
     
     
