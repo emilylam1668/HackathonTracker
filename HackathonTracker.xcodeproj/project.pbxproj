@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3DD7982EA6A6BF1B9BB6AE32 /* Pods_HackathonTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0481D35D856985704F6500BC /* Pods_HackathonTracker.framework */; };
+		3F1B284F00BE1BB6C51F817E /* Pods_HackathonTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA81203768F4826E15AA89D /* Pods_HackathonTracker.framework */; };
+		73A631D820FEB2B6001AB722 /* DetailPoopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A631D720FEB2B6001AB722 /* DetailPoopViewController.swift */; };
+		73A631DF20FEB995001AB722 /* DetailedPoop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A631DE20FEB995001AB722 /* DetailedPoop.storyboard */; };
+		9DD7F13C21000E6000576629 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD7F13B21000E6000576629 /* CustomCell.swift */; };
+		9DD7F13F2100125B00576629 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD7F13E2100125B00576629 /* Calendar.storyboard */; };
+		9DD7F14121001F4B00576629 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD7F14021001F4B00576629 /* CalendarViewController.swift */; };
+		D71261C620FEB16200EEF0CC /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71261C520FEB16200EEF0CC /* CoreDataHelper.swift */; };
+		D71261CA20FEED7600EEF0CC /* DisplayDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71261C920FEED7600EEF0CC /* DisplayDataCell.swift */; };
 		D790A35E20FE925C00849775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790A35D20FE925C00849775 /* AppDelegate.swift */; };
 		D790A36020FE925C00849775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790A35F20FE925C00849775 /* ViewController.swift */; };
 		D790A36320FE925C00849775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D790A36120FE925C00849775 /* Main.storyboard */; };
@@ -17,9 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0481D35D856985704F6500BC /* Pods_HackathonTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B1CF3A83381976AF0E9AC04 /* Pods-HackathonTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTracker/Pods-HackathonTracker.debug.xcconfig"; sourceTree = "<group>"; };
-		964192AF0046B881F849AC13 /* Pods-HackathonTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTracker/Pods-HackathonTracker.release.xcconfig"; sourceTree = "<group>"; };
+		14654515E3C22FBD7CF7FC43 /* Pods-HackathonTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTracker/Pods-HackathonTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		73A631D720FEB2B6001AB722 /* DetailPoopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPoopViewController.swift; sourceTree = "<group>"; };
+		73A631DE20FEB995001AB722 /* DetailedPoop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailedPoop.storyboard; sourceTree = "<group>"; };
+		9DD7F13B21000E6000576629 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		9DD7F13E2100125B00576629 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		9DD7F14021001F4B00576629 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		D71261C520FEB16200EEF0CC /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		D71261C920FEED7600EEF0CC /* DisplayDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayDataCell.swift; sourceTree = "<group>"; };
 		D790A35A20FE925C00849775 /* HackathonTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D790A35D20FE925C00849775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D790A35F20FE925C00849775 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +40,8 @@
 		D790A36720FE926000849775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D790A36A20FE926000849775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D790A36C20FE926000849775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E61293F8551E544B0B6E26AB /* Pods-HackathonTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTracker/Pods-HackathonTracker.release.xcconfig"; sourceTree = "<group>"; };
+		EBA81203768F4826E15AA89D /* Pods_HackathonTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,28 +49,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD7982EA6A6BF1B9BB6AE32 /* Pods_HackathonTracker.framework in Frameworks */,
+				3F1B284F00BE1BB6C51F817E /* Pods_HackathonTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D5AB41BCD3491B9C0DBA220 /* Frameworks */ = {
+		36D97AAFA4D08E1DA3B8A033 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0481D35D856985704F6500BC /* Pods_HackathonTracker.framework */,
+				EBA81203768F4826E15AA89D /* Pods_HackathonTracker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C6E9B1DBDCF70A8DFAE3C3B7 /* Pods */ = {
+		8D5F2F4FFCD7E533D5A72625 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5B1CF3A83381976AF0E9AC04 /* Pods-HackathonTracker.debug.xcconfig */,
-				964192AF0046B881F849AC13 /* Pods-HackathonTracker.release.xcconfig */,
+				14654515E3C22FBD7CF7FC43 /* Pods-HackathonTracker.debug.xcconfig */,
+				E61293F8551E544B0B6E26AB /* Pods-HackathonTracker.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9DD7F13D2100122F00576629 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9DD7F13E2100125B00576629 /* Calendar.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		D790A35120FE925C00849775 = {
@@ -64,8 +86,8 @@
 			children = (
 				D790A35C20FE925C00849775 /* HackathonTracker */,
 				D790A35B20FE925C00849775 /* Products */,
-				C6E9B1DBDCF70A8DFAE3C3B7 /* Pods */,
-				3D5AB41BCD3491B9C0DBA220 /* Frameworks */,
+				8D5F2F4FFCD7E533D5A72625 /* Pods */,
+				36D97AAFA4D08E1DA3B8A033 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,13 +102,20 @@
 		D790A35C20FE925C00849775 /* HackathonTracker */ = {
 			isa = PBXGroup;
 			children = (
+				9DD7F13D2100122F00576629 /* Storyboard */,
+				D71261C920FEED7600EEF0CC /* DisplayDataCell.swift */,
 				D790A35D20FE925C00849775 /* AppDelegate.swift */,
 				D790A35F20FE925C00849775 /* ViewController.swift */,
 				D790A36120FE925C00849775 /* Main.storyboard */,
+				D71261C520FEB16200EEF0CC /* CoreDataHelper.swift */,
+				73A631D720FEB2B6001AB722 /* DetailPoopViewController.swift */,
+				73A631DE20FEB995001AB722 /* DetailedPoop.storyboard */,
 				D790A36720FE926000849775 /* Assets.xcassets */,
 				D790A36920FE926000849775 /* LaunchScreen.storyboard */,
 				D790A36C20FE926000849775 /* Info.plist */,
 				D790A36420FE925C00849775 /* HackathonTracker.xcdatamodeld */,
+				9DD7F13B21000E6000576629 /* CustomCell.swift */,
+				9DD7F14021001F4B00576629 /* CalendarViewController.swift */,
 			);
 			path = HackathonTracker;
 			sourceTree = "<group>";
@@ -98,11 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D790A36F20FE926000849775 /* Build configuration list for PBXNativeTarget "HackathonTracker" */;
 			buildPhases = (
-				48AAC9A744C70F2422CD0D2B /* [CP] Check Pods Manifest.lock */,
+				0B5766FD584D6E00D1E13392 /* [CP] Check Pods Manifest.lock */,
 				D790A35620FE925C00849775 /* Sources */,
 				D790A35720FE925C00849775 /* Frameworks */,
 				D790A35820FE925C00849775 /* Resources */,
-				8B17E6A0D9646803F46CAB8C /* [CP] Embed Pods Frameworks */,
+				8FACCE435D0F22CF297AA11C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +180,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A631DF20FEB995001AB722 /* DetailedPoop.storyboard in Resources */,
+				9DD7F13F2100125B00576629 /* Calendar.storyboard in Resources */,
 				D790A36B20FE926000849775 /* LaunchScreen.storyboard in Resources */,
 				D790A36820FE926000849775 /* Assets.xcassets in Resources */,
 				D790A36320FE925C00849775 /* Main.storyboard in Resources */,
@@ -160,7 +191,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		48AAC9A744C70F2422CD0D2B /* [CP] Check Pods Manifest.lock */ = {
+		0B5766FD584D6E00D1E13392 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,7 +209,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B17E6A0D9646803F46CAB8C /* [CP] Embed Pods Frameworks */ = {
+		8FACCE435D0F22CF297AA11C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,7 +235,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D790A36620FE925C00849775 /* HackathonTracker.xcdatamodeld in Sources */,
+				73A631D820FEB2B6001AB722 /* DetailPoopViewController.swift in Sources */,
 				D790A36020FE925C00849775 /* ViewController.swift in Sources */,
+				D71261C620FEB16200EEF0CC /* CoreDataHelper.swift in Sources */,
+				D71261CA20FEED7600EEF0CC /* DisplayDataCell.swift in Sources */,
+				9DD7F14121001F4B00576629 /* CalendarViewController.swift in Sources */,
+				9DD7F13C21000E6000576629 /* CustomCell.swift in Sources */,
 				D790A35E20FE925C00849775 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +383,7 @@
 		};
 		D790A37020FE926000849775 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B1CF3A83381976AF0E9AC04 /* Pods-HackathonTracker.debug.xcconfig */;
+			baseConfigurationReference = 14654515E3C22FBD7CF7FC43 /* Pods-HackathonTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,7 +402,7 @@
 		};
 		D790A37120FE926000849775 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 964192AF0046B881F849AC13 /* Pods-HackathonTracker.release.xcconfig */;
+			baseConfigurationReference = E61293F8551E544B0B6E26AB /* Pods-HackathonTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
