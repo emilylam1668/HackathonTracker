@@ -49,15 +49,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "displayDataCell") as! displayDataCell
         
-        switch indexPath.row {
-        case 0:
-            cell.amountLabel.text = "testing"
-            
-        default:
-            cell.amountLabel.text = ""
-            cell.dateCreatedLabel.text = ""
-            cell.thicknessLabel.text = ""
-        }
+        
+        cell.amountLabel.text = poopItems[indexPath.row].amount
+        // cell.dateCreatedLabel.text = String(poopItems[indexPath.row].dateCreated!)
+        cell.thicknessLabel.text = String(poopItems[indexPath.row].thickness)
         return cell
     }
     

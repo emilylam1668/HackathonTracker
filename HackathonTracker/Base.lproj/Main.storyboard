@@ -81,7 +81,6 @@
                                             <outlet property="amountLabel" destination="fSp-Fw-PkO" id="WoI-Ek-2NO"/>
                                             <outlet property="dateCreatedLabel" destination="NrV-im-oBt" id="Y1c-YT-a5O"/>
                                             <outlet property="thicknessLabel" destination="pEl-af-eOQ" id="0nr-Yn-XW7"/>
-                                            <segue destination="wuq-YZ-BiW" kind="show" id="FGb-1J-HFF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -104,7 +103,6 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="K4n-vX-ebO">
                             <connections>
                                 <action selector="addPoopData:" destination="BYZ-38-t0r" id="FNH-Tq-H8d"/>
-                                <segue destination="wuq-YZ-BiW" kind="show" id="y3S-1y-fed"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -143,7 +141,7 @@
             </objects>
             <point key="canvasLocation" x="844" y="-225"/>
         </scene>
-        <!--Detail Poop View Controller-->
+        <!--Title-->
         <scene sceneID="Rnf-8F-GHh">
             <objects>
                 <viewController id="wuq-YZ-BiW" customClass="DetailPoopViewController" customModule="HackathonTracker" customModuleProvider="target" sceneMemberID="viewController">
@@ -321,12 +319,9 @@
                         <viewLayoutGuide key="safeArea" id="d9p-qM-u4e"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="4o8-2f-rky">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="NxE-eX-WYQ">
-                            <connections>
-                                <action selector="saveButton:" destination="wuq-YZ-BiW" id="MGO-y5-xhI"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="Title" id="YzN-0r-Usr">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="NtU-zc-N9S"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="vLy-wI-2BA"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -345,10 +340,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygR-PK-khP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1881" y="32"/>
+            <point key="canvasLocation" x="1993" y="32"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="FGb-1J-HFF"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -38,9 +38,10 @@ class CalendarViewController: UIViewController {
     }
     
     func callPoopViewController(){
-        let storyboard = UIStoryboard(name: "DetailedPoop", bundle: nil)
-        let detail = storyboard.instantiateInitialViewController() as! DetailPoopViewController
-        self.present(detail, animated: true, completion: nil)
+//        let storyboard = UIStoryboard(name: "DetailedPoop", bundle: nil)
+//        let detail = storyboard.instantiateInitialViewController() as! DetailPoopViewController
+//        self.present(detail, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "addPoopDetails", sender: self)
     }
     
     func loadTableview(){
@@ -111,6 +112,10 @@ class CalendarViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
+        loadTableview()
+    }
 }
 
 extension CalendarViewController: JTAppleCalendarViewDataSource {
@@ -165,6 +170,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
         setupViewsOfCalendar(from: visibleDates)
     }
+    
 }
 
 extension CalendarViewController {
