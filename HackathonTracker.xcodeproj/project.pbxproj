@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3F1B284F00BE1BB6C51F817E /* Pods_HackathonTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA81203768F4826E15AA89D /* Pods_HackathonTracker.framework */; };
 		73A631D820FEB2B6001AB722 /* DetailPoopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A631D720FEB2B6001AB722 /* DetailPoopViewController.swift */; };
-		73A631DF20FEB995001AB722 /* DetailedPoop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73A631DE20FEB995001AB722 /* DetailedPoop.storyboard */; };
 		9DD7F13C21000E6000576629 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD7F13B21000E6000576629 /* CustomCell.swift */; };
 		9DD7F13F2100125B00576629 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DD7F13E2100125B00576629 /* Calendar.storyboard */; };
 		9DD7F14121001F4B00576629 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD7F14021001F4B00576629 /* CalendarViewController.swift */; };
@@ -26,7 +25,6 @@
 /* Begin PBXFileReference section */
 		14654515E3C22FBD7CF7FC43 /* Pods-HackathonTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonTracker/Pods-HackathonTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		73A631D720FEB2B6001AB722 /* DetailPoopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPoopViewController.swift; sourceTree = "<group>"; };
-		73A631DE20FEB995001AB722 /* DetailedPoop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailedPoop.storyboard; sourceTree = "<group>"; };
 		9DD7F13B21000E6000576629 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		9DD7F13E2100125B00576629 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		9DD7F14021001F4B00576629 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				D790A36120FE925C00849775 /* Main.storyboard */,
 				D71261C520FEB16200EEF0CC /* CoreDataHelper.swift */,
 				73A631D720FEB2B6001AB722 /* DetailPoopViewController.swift */,
-				73A631DE20FEB995001AB722 /* DetailedPoop.storyboard */,
 				D790A36720FE926000849775 /* Assets.xcassets */,
 				D790A36920FE926000849775 /* LaunchScreen.storyboard */,
 				D790A36C20FE926000849775 /* Info.plist */,
@@ -180,7 +177,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73A631DF20FEB995001AB722 /* DetailedPoop.storyboard in Resources */,
 				9DD7F13F2100125B00576629 /* Calendar.storyboard in Resources */,
 				D790A36B20FE926000849775 /* LaunchScreen.storyboard in Resources */,
 				D790A36820FE926000849775 /* Assets.xcassets in Resources */,
