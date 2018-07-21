@@ -37,6 +37,12 @@ class CalendarViewController: UIViewController {
         }
     }
     
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+//        if editingStyle == .delete {
+//            PData.remove(at: indexPath.row)
+//        }
+    }
+    
     func callPoopViewController(){
 //        let storyboard = UIStoryboard(name: "DetailedPoop", bundle: nil)
 //        let detail = storyboard.instantiateInitialViewController() as! DetailPoopViewController
