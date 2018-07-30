@@ -37,7 +37,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Created" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NrV-im-oBt">
                                                             <rect key="frame" x="0.0" y="0.0" width="354" height="66.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" red="0.33333333329999998" green="0.27058823529999998" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOa-zf-o5S">
